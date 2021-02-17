@@ -6,6 +6,17 @@
     "scripts": {
         "prettier": "npx prettier --write --ignore-unknown ."
     },
+    "husky": {
+        "hooks": {
+            "pre-commit": "npx lint-staged"
+        }
+    },
+    "lint-staged": {
+        "src/**/*.js": [
+            "npx pretty-quick --staged",
+            "npx eslint --fix src --ext .js"
+        ]
+    },    
     "repository": {
         "type": "git",
         "url": "git+https://github.com/paulodelima/Projeto-modelo-node.git"
