@@ -1,5 +1,5 @@
-const variavelNumerica = 2;
+const variavelNumerica = true;
 
 if (variavelNumerica == true && variavelNumerica == true && variavelNumerica == true && variavelNumerica == true && variavelNumerica == true && variavelNumerica == true && variavelNumerica == true && variavelNumerica == true) {
-    console.info('data');
+        console.info('data');
 }
